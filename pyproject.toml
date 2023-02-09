@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "skytether"
+version = "0.1.0"
+description = "An extension of SkyhookDM for computational storage"
+authors = ["Aldrin <akmontan@ucsc.edu>"]
+license = "MPL 2.0"
+packages = [
+    { include = "skytether", from = "src/python" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+numpy = "^1.24.2"
+pyarrow = "^11.0.0"
+cython = "^0.29.33"
+pylint = "^2.16.1"
+pandas = "^1.5.3"
+meson = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = [
+     "poetry-core>=1.0.0"
+    ,"cython>=0.29"
+    ,"setuptools"
+    ,"wheel"
+]
